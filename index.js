@@ -34,7 +34,7 @@ const sendRequest = async (url) => {
 }
 
 setInterval(() => {
-    console.log(`Sending start ${index} good ${good} bad ${bad} successRate ${(good / (good + bad)).toFixed(2)}`)
+    console.log(`Sending start ${index} good ${good} bad ${bad} successRate ${((good / (good + bad)) * 100).toFixed(2)}%`)
     const url = `https://steamcommunity.com/market/search/render/?appid=730&norender=1&count=${INDEX_STEP}&start=${index}`
     sendRequest(url)
 }, duration)
