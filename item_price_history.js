@@ -1,5 +1,4 @@
 import fetch from 'node-fetch';
-import { performance } from 'perf_hooks';
 
 const marketHashNames = [
     "Fracture%20Case",
@@ -29,12 +28,10 @@ const sendRequest = async (url) => {
 			method: 'GET'
 		});
 		if (response.status >= 200 && response.status < 300) {
-            let start = performance.now()
             const htmlString = await response.text()
             const dataString = htmlString.split('var line1=')[1].split('g_timePriceHistoryEarliest')[0].split(';')[0]
             const prices = JSON.parse(dataString)
             console.log(prices[0], prices[prices.length - 1])
-            console.log(performance.now() - start)
             good++
         } else {
             bad++
