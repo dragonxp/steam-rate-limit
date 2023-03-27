@@ -33,7 +33,7 @@ const sendRequest = async (url) => {
             const htmlString = await response.text()
             const dataString = htmlString.split('var line1=')[1].split('g_timePriceHistoryEarliest')[0].split(';')[0]
             const prices = JSON.parse(dataString)
-            console.log(prices[0], prices.at(-1))
+            console.log(prices[0], prices[prices.length - 1])
             console.log(performance.now() - start)
             good++
         } else {
