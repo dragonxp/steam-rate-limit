@@ -1,0 +1,6 @@
+{
+    "success": true,
+    "lowest_price": "$13.95",
+    "volume": "944",
+    "median_price": "$14.61"
+}
