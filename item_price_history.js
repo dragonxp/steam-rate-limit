@@ -10,7 +10,17 @@ const marketHashNames = [
     "Dreams%20%26%20Nightmares%20Case",
     "Recoil%20Case",
     "Glove%20Case",
-    "Gamma%202%20Case"
+    "Gamma%202%20Case",
+    "Operation%20Broken%20Fang%20Case",
+    "Gamma%20Case",
+    "CS20%20Case",
+    "Antwerp%202022%20Contenders%20Autograph%20Capsule",
+    "Sticker%20%7C%20Outsiders%20%7C%20Antwerp%202022",
+    "Revolver%20Case",
+    "Rio%202022%20Contenders%20Sticker%20Capsule",
+    "Rio%202022%20Dust%20II%20Souvenir%20Package",
+    "Operation%20Wildfire%20Case",
+    "2020%20RMR%20Legends"
 ]
 
 let index = 0
