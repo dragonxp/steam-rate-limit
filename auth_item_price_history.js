@@ -27,7 +27,7 @@ let badCodes = new Set()
 
 //command line arguments
 //node index.js {time in ms}
-const duration = process.argv[2]
+const duration = process.argv[2] || 1000
 
 const sendRequest = async (url) => {
 	try {

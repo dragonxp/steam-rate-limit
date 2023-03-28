@@ -3,7 +3,7 @@ import crypto from 'crypto';
 
 //command line arguments
 //node index.js {time in ms}
-const duration = process.argv[2]
+const duration = process.argv[2] || 1000
 
 const INDEX_STEP = 100
 let index = 0
